@@ -23,7 +23,7 @@ export default function Contact() {
               type="text"
               id="name"
               autoComplete="off"
-              className="pl-[20px] h-[64px] w-full bg-[#0a0a0a] border border-[#444444] rounded-none text-[#ffffff] text-[1rem] font-normal transition-[background-color_.4s_cubic-bezier(.5,.25,0,1),border-color_.4s_cubic-bezier(.5,.25,0,1),box-shadow_.4s_cubic-bezier(.5,.25,0,1)]"
+              className="pl-[20px] h-[64px] w-full bg-[#0a0a0a] border border-[#444444] rounded-none text-[#ffffff] text-[1rem] font-normal outline-none focus:border-[#ffffff] transition-[background-color_.4s_cubic-bezier(.5,.25,0,1),border-color_.4s_cubic-bezier(.5,.25,0,1),box-shadow_.4s_cubic-bezier(.5,.25,0,1)]"
             />
             <label className="absolute top-[3px] left-[20px] text-[#ffffff] text-[16px] font-normal tracking-[.25em] uppercase -translate-y-1/2 z-[2] before:absolute before:-top-[3px] before:-left-[8px] before:h-[8px] before:w-[calc(100%+12px)] before:bg-[#0a0a0a] before:content-[''] before:block before:transition-[background-color_.4s_cubic-bezier(.5,.25,0,1)] before:-z-[1]">
               Name
@@ -34,7 +34,7 @@ export default function Contact() {
               type="email"
               id="email"
               autoComplete="off"
-              className="pl-[20px] h-[64px] w-full bg-[#0a0a0a] border border-[#444444] rounded-none text-[#ffffff] text-[1rem] font-normal transition-[background-color_.4s_cubic-bezier(.5,.25,0,1),border-color_.4s_cubic-bezier(.5,.25,0,1),box-shadow_.4s_cubic-bezier(.5,.25,0,1)]"
+              className="pl-[20px] h-[64px] w-full bg-[#0a0a0a] border border-[#444444] rounded-none text-[#ffffff] text-[1rem] font-normal outline-none focus:border-[#ffffff] transition-[background-color_.4s_cubic-bezier(.5,.25,0,1),border-color_.4s_cubic-bezier(.5,.25,0,1),box-shadow_.4s_cubic-bezier(.5,.25,0,1)]"
             />
             <label className="absolute top-[3px] left-[20px] text-[#ffffff] text-[16px] font-normal tracking-[.25em] uppercase -translate-y-1/2 z-[2] before:absolute before:-top-[3px] before:-left-[8px] before:h-[8px] before:w-[calc(100%+12px)] before:bg-[#0a0a0a] before:content-[''] before:block before:transition-[background-color_.4s_cubic-bezier(.5,.25,0,1)] before:-z-[1]">
               Email
@@ -44,7 +44,7 @@ export default function Contact() {
             <textarea
               id="message"
               autoComplete="off"
-              className="p-[20px] h-[200px] w-full bg-[#0a0a0a] border border-[#444444] rounded-none text-[#ffffff] text-[1rem] font-normal leading-normal transition-[background-color_.4s_cubic-bezier(.5,.25,0,1),border-color_.4s_cubic-bezier(.5,.25,0,1),box-shadow_.4s_cubic-bezier(.5,.25,0,1)]"
+              className="resize-none p-[20px] h-[200px] w-full bg-[#0a0a0a] border border-[#444444] rounded-none text-[#ffffff] text-[1rem] font-normal leading-normal outline-none focus:border-[#ffffff] transition-[background-color_.4s_cubic-bezier(.5,.25,0,1),border-color_.4s_cubic-bezier(.5,.25,0,1),box-shadow_.4s_cubic-bezier(.5,.25,0,1)]"
             />
             <label className="absolute top-[3px] left-[20px] text-[#ffffff] text-[16px] font-normal tracking-[.25em] uppercase -translate-y-1/2 z-[2] before:absolute before:-top-[3px] before:-left-[8px] before:h-[8px] before:w-[calc(100%+12px)] before:bg-[#0a0a0a] before:content-[''] before:block before:transition-[background-color_.4s_cubic-bezier(.5,.25,0,1)] before:-z-[1]">
               Message
