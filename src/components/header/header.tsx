@@ -1,5 +1,6 @@
 import * as React from "react";
 import Link from "next/link";
+import { AdaptiveCursor } from "../adaptive-cursor/adaptive-cursor";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -22,6 +23,7 @@ export const Header = () => {
         onClick={toggleMenu}
         aria-label={isMenuOpen ? "Menü schließen" : "Menü öffnen"}
       >
+        <AdaptiveCursor />
         <span className="sr-only">Menu</span>
         <span className="absolute top-0 left-0 h-full w-full pointer-events-none before:scale-x-100 before:delay-[0ms] before:top-[26px] before:origin-left before:absolute before:left-4 before:h-0.5 before:w-8 before:bg-foreground before:content-[''] before:block before:transition-[transform_.4s_cubic-bezier(.5,.25,0,1)] after:scale-x-100 after:delay-[0ms] after:bottom-[26px] after:origin-right after:absolute after:left-4 after:h-0.5 after:w-8 after:bg-foreground after:content-[''] after:block after:transition-[transform_.4s_cubic-bezier(.5,.25,0,1)]"></span>
         <span className="absolute top-0 left-0 h-full w-full pointer-events-none before:origin-left before:absolute before:top-1/2 before:left-4 before:h-0.5 before:w-8 before:bg-foreground before:content-[''] before:block before:-translate-x-[3.5px] before:-translate-y-[20.75px] before:rotate-45 before:scale-x-0 before:transition-[transform_.4s_cubic-bezier(.5,.25,0,1)_0ms] after:translate-x-[3.5px] after:-translate-y-[20.75px] after:-rotate-45 after:origin-right after:absolute after:top-1/2 after:left-4 after:h-0.5 after:w-8 after:bg-foreground after:content-[''] after:scale-x-0 after:block after:transition-[transform_.4s_cubic-bezier(.5,.25,0,1)_0ms]"></span>
