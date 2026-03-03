@@ -1,12 +1,12 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
+import * as React from "react";
 
 export const AdaptiveCursor = () => {
-  const cursorRef = useRef<HTMLSpanElement>(null);
-  const [isActive, setIsActive] = useState(false);
+  const cursorRef = React.useRef<HTMLSpanElement>(null);
+  const [isActive, setIsActive] = React.useState(false);
 
-  useEffect(() => {
+  React.useEffect(() => {
     const cursor = cursorRef.current;
     if (!cursor) return;
 
@@ -73,7 +73,7 @@ export const AdaptiveCursor = () => {
   return (
     <span
       ref={cursorRef}
-      className="fixed top-0 left-0 z-[9999] h-[56px] w-[56px] rounded-full bg-white pointer-events-none will-change-transform mix-blend-difference transition-transform duration-200 ease-out"
+      className="fixed top-0 left-0 z-9999 h-14 w-14 rounded-full bg-white pointer-events-none will-change-transform mix-blend-difference transition-transform duration-200 ease-out"
     />
   );
 };

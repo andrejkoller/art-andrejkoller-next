@@ -45,7 +45,7 @@ export const Cursor = () => {
   return (
     <React.Fragment>
       <div
-        className="fixed top-0 left-0 pointer-events-none z-[9999] hidden md:block"
+        className="fixed top-0 left-0 pointer-events-none z-9999 hidden md:block"
         style={{
           transform: `translate3d(${outerPos.x - 24}px, ${
             outerPos.y - 24
@@ -56,7 +56,7 @@ export const Cursor = () => {
       </div>
 
       <div
-        className="fixed top-0 left-0 pointer-events-none z-[9999] hidden md:block"
+        className="fixed top-0 left-0 pointer-events-none z-9999 hidden md:block"
         style={{
           transform: `translate3d(${innerPos.x - 6}px, ${
             innerPos.y - 6
