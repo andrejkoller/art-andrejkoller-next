@@ -1,6 +1,8 @@
 "use client";
 
-import { Header, Footer, Menu } from "@/components";
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
+import { Menu } from "@/components/menu";
 import { Cursor } from "@/components/cursor";
 
 export default function ClientLayout({
