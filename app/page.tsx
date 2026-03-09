@@ -20,7 +20,7 @@ export default function Home() {
                   className="border-none"
                 />
               </div>
-              <h1 className="absolute top-1/2 left-1/2 mt-[1vw] mb-0 -translate-x-1/2 -translate-y-1/2 text-[#ffffff] text-[10vw] font-normal leading-none opacity-[.875] overflow-hidden pointer-events-none no-underline whitespace-nowrap z-10">
+              <h1 className="absolute top-1/2 left-1/2 mt-[1vw] mb-0 -translate-x-1/2 -translate-y-1/2 text-[#ffffff] text-[10vw] font-normal leading-none opacity-[.875] overflow-hidden pointer-events-none no-underline whitespace-nowrap">
                 <span>2</span>
                 <span>0</span>
                 <span>2</span>
@@ -42,7 +42,7 @@ export default function Home() {
                   className="border-none"
                 />
               </div>
-              <h1 className="absolute top-1/2 left-1/2 mt-[1vw] mb-0 -translate-x-1/2 -translate-y-1/2 text-[#ffffff] text-[10vw] font-normal leading-none opacity-[.875] overflow-hidden pointer-events-none no-underline whitespace-nowrap z-10">
+              <h1 className="absolute top-1/2 left-1/2 mt-[1vw] mb-0 -translate-x-1/2 -translate-y-1/2 text-[#ffffff] text-[10vw] font-normal leading-none opacity-[.875] overflow-hidden pointer-events-none no-underline whitespace-nowrap">
                 <span>2</span>
                 <span>0</span>
                 <span>2</span>
@@ -64,7 +64,7 @@ export default function Home() {
                   className="border-none"
                 />
               </div>
-              <h1 className="absolute top-1/2 left-1/2 mt-[1vw] mb-0 -translate-x-1/2 -translate-y-1/2 text-[#ffffff] text-[10vw] font-normal leading-none opacity-[.875] overflow-hidden pointer-events-none no-underline whitespace-nowrap z-10">
+              <h1 className="absolute top-1/2 left-1/2 mt-[1vw] mb-0 -translate-x-1/2 -translate-y-1/2 text-[#ffffff] text-[10vw] font-normal leading-none opacity-[.875] overflow-hidden pointer-events-none no-underline whitespace-nowrap">
                 <span>2</span>
                 <span>0</span>
                 <span>2</span>

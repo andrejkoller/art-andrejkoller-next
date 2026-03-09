@@ -8,7 +8,7 @@ export default function About() {
           <div className="absolute top-0 left-0 h-92 w-132 shadow-[0_4px_8px_0_rgba(0,0,0,.5),0_8px_16px_0_rgba(0,0,0,.25)] leading-none overflow-hidden">
             <Image
               className="absolute top-0 left-0"
-              src={"/about.jpg"}
+              src={"/images/about.jpg"}
               alt={"Andrej Koller"}
               width={528}
               height={368}
@@ -29,7 +29,7 @@ export default function About() {
           <span className="absolute -bottom-4 right-0 h-px w-[calc(100%+48px)] bg-[#ffffff] block"></span>
         </div>
         <blockquote className="m-0 text-[#ffffff] text-[1.25rem] font-normal leading-10">
-          <p className="mb-5">
+          <p className="mb-5 font-inter">
             Hi there! I’m Danielle, a graphic designer born and raised in the
             Philippines, currently living in Baltimore. My experience includes
             illustration, branding, designing websites for e-commerce clients,
@@ -37,7 +37,7 @@ export default function About() {
             When I’m not designing, you can probably find me cooking, doodling
             in my sketchbook, or playing my Nintendo Switch.
           </p>
-          <footer className="static w-auto text-right transform-none">
+          <footer className="static w-auto text-right transform-none font-inter">
             — Andrej Koller
           </footer>
         </blockquote>

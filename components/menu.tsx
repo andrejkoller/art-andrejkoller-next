@@ -1,6 +1,13 @@
 import Link from "next/link";
+import { menuConfig } from "@/configs/menu-config";
 
-export const Menu = () => {
+export const Menu = ({
+  isMenuOpen,
+  setIsMenuOpen,
+}: {
+  isMenuOpen: boolean;
+  setIsMenuOpen: (isOpen: boolean) => void;
+}) => {
   const linkStyles = `
     relative inline-block pt-[0.15em] pr-[0.5em] pb-0 pl-[0.65em]
     text-foreground text-[96px] tracking-[0.125em]
@@ -20,12 +27,22 @@ export const Menu = () => {
   `;
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-[#0a0a0a] z-10">
-      <ul className="fixed top-1/2 m-0 p-0 w-full list-none text-center hidden">
-        {["Home", "About", "Contact"].map((label, i) => (
-          <li key={i} className="mb-[4vh] will-change-transform">
-            <Link className={linkStyles} href={`/${label.toLowerCase()}`}>
-              {label}
+    <nav
+      className={`fixed top-0 left-0 w-full bg-[#0a0a0a] z-10 transition-all duration-500 ${isMenuOpen ? "h-full" : "h-0 pointer-events-none"}`}
+    >
+      <ul className="fixed top-1/2 -translate-y-1/2 m-0 p-0 w-full list-none text-center">
+        {menuConfig.map((link, i) => (
+          <li
+            key={i}
+            className={`mb-[4vh] will-change-transform transition-all duration-500 ease-[cubic-bezier(.5,.25,0,1)] -translate-x-1/4 ${isMenuOpen ? "translate-x-0 opacity-100" : "opacity-0"}`}
+            style={{ transitionDelay: isMenuOpen ? `${i * 100}ms` : "0ms" }}
+          >
+            <Link
+              className={linkStyles}
+              href={link.href}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              {link.label}
             </Link>
           </li>
         ))}

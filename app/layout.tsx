@@ -1,7 +1,13 @@
 import type { Metadata } from "next";
+import localFont from "next/font/local";
 import { Inter } from "next/font/google";
 import "./styles/globals.css";
 import ClientLayout from "./client-layout";
+
+const chester = localFont({
+  src: "../public/fonts/BNChester.otf",
+  variable: "--font-chester",
+});
 
 const inter = Inter({
   subsets: ["latin"],
@@ -9,8 +15,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Andrej Koller | Musician x Developer",
-  description: "Andrej Koller is a musician and developer based in Germany.",
+  title: "Andrej Koller",
+  description:
+    "Andrej Koller is a digital creator specializing in graphic design, illustration, and web development.",
 };
 
 export default function RootLayout({
@@ -20,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} antialiased`}>
+      <body className={`${chester.variable} ${inter.variable} antialiased`}>
         <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
