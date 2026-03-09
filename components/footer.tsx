@@ -14,7 +14,7 @@ export const Footer = () => {
           rel="noopener noreferrer"
           aria-label="Linktree Profile"
         >
-          <span className="bg-[url('/icon-linktree.svg')] bg-center bg-no-repeat bg-size-[16px_16px] pointer-events-none relative h-12 w-12 inline-block brightness-0 invert"></span>
+          <span className="bg-[url('/icons/icon-linktree.svg')] bg-center bg-no-repeat bg-size-[16px_16px] pointer-events-none relative h-12 w-12 inline-block brightness-0 invert"></span>
         </Link>
       </div>
     </footer>
